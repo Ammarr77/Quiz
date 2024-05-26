@@ -1,0 +1,28 @@
+body 
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    font-style: oblique;
+    background: none;
+    display: flex;
+    align-items: center;
+    position: inherit;
+    height: auto;
+    justify-content: center;
+    opacity: initial;
+    text-decoration: solid;
+}
+  
+  #quiz-container 
+  {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 0 auto;
+    width: 500px;
+  }
+  
+  .question 
+  {
+    margin-bottom: 15px;
+  }
+  

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz Form</title>
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+<body>
+    <h1>Quiz</h1>
+    <form id="quizForm">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+
+        <div class="question">
+            <label>1. What is the capital of France?</label>
+            <div class="choices">
+                <input type="radio" id="q1a" name="q1" value="0">
+                <label for="q1a">Berlin</label><br>
+                <input type="radio" id="q1b" name="q1" value="0">
+                <label for="q1b">Madrid</label><br>
+                <input type="radio" id="q1c" name="q1" value="1">
+                <label for="q1c">Paris</label><br>
+                <input type="radio" id="q1d" name="q1" value="0">
+                <label for="q1d">Rome</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <label>2. What is 2 + 2?</label>
+            <div class="choices">
+                <input type="radio" id="q2a" name="q2" value="0">
+                <label for="q2a">3</label><br>
+                <input type="radio" id="q2b" name="q2" value="1">
+                <label for="q2b">4</label><br>
+                <input type="radio" id="q2c" name="q2" value="0">
+                <label for="q2c">5</label><br>
+                <input type="radio" id="q2d" name="q2" value="0">
+                <label for="q2d">6</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <label>3. What is the largest planet in our solar system?</label>
+            <div class="choices">
+                <input type="radio" id="q3a" name="q3" value="0">
+                <label for="q3a">Earth</label><br>
+                <input type="radio" id="q3b" name="q3" value="0">
+                <label for="q3b">Mars</label><br>
+                <input type="radio" id="q3c" name="q3" value="0">
+                <label for="q3c">Venus</label><br>
+                <input type="radio" id="q3d" name="q3" value="1">
+                <label for="q3d">Jupiter</label>
+            </div>
+        </div>
+
+        <button type="button" onclick="calculateScore()">Submit</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="Quiz.js"></script>
+</body>
+</html>
